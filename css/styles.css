@@ -38,7 +38,7 @@ a {
 /*--- формат кнопок навигации-----*/
 button {
   height: 38px;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -46,6 +46,13 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color_brend_title);
+}
+button:first-child {
+  /* background-color: var(--color_btn_link);*/
+}
+button.current {
+  background-color: var(--color_btn_link);
+  color: var(--color_btn_txt);
 }
 
 /*--Отмена установок "по умолчанию" списков и ссылок-----*/
@@ -68,7 +75,7 @@ button {
   color: #ffffff;
   background: #2f303a;
   width: 1600px;
-  height: 600px;
+  /*height: 600px;*/
   left: 0px;
   top: 100px;
 }
@@ -91,6 +98,9 @@ button:focus {
   border: 1px solid #eeeeee;
   width: 391px;
   height: 292px;
+}
+.card-section {
+  background-color: #f5f4fa;
 }
 
 /*-----фортат заголовков и подзаголовков----*/
@@ -143,6 +153,6 @@ button:focus {
 .card-text {
   font-size: 16px;
   line-height: 1.17;
-  /*text-align: center;*/
+  text-align: center;
   color: var(--color_brend_txt);
 }
