@@ -5,123 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
 
   <body>
-    <header class="main-nav">
-      <nav class="nav-list-links">
-        <a class="logo" href="./index.html">
-          <span class="logo-fist-name">Web</span>
-          <span class="logo-second-name">Studio</span>
-        </a>
-
-        <ul>
-          <li class="nav-list-item">
-            <a class="nav-item-link" href="./index.html">Студия</a>
+    <header class="page-header">
+      <nav class="nav-main">
+        <a class="logo" href="#">Web<span>Studio</span></a>
+        <ul class="nav-list list">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Студия</a>
           </li>
-          <li class="nav-list-item">
-            <a class="nav-item-link" href="#">Портфолио</a>
+          <li class="nav-item">
+            <a class="nav-link current" href="#">Портфолио</a>
           </li>
-          <li class="nav-list-item">
-            <a class="nav-item-link" href="#">Контакты</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul class="links-contact">
-        <li class="item-mail">
-          <a class="link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <ul class="nav-contact list">
+        <li class="nav-item">
+          <a class="nav-link-mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li class="item-phone">
-          <a class="link-phone" href="tel:+380961111111"> +38 096 111 11 11</a>
+        <li class="nav-item">
+          <a class="nav-link-phone" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
 
     <!--Герой-->
     <main>
-      <section class="btn-select">
-        <h1 class="nav-portfolio">Портфолио</h1>
+      <section class="portfolio-section">
+        <h1 class="portfolio-title">Портфолио</h1>
 
         <!--Фильтр по разделам-->
-        <ul class="btn-select-list">
-          <li class="btn-select=item"><button type="button">Все</button></li>
-          <li class="btn-select=item"><button type="button">Веб-сайты</button></li>
-          <li class="btn-select=item"><button type="button">Приложения</button></li>
-          <li class="btn-select=item"><button type="button">Дизайн</button></li>
-          <li class="btn-select=item"><button type="button">Маркетинг</button></li>
+        <ul class="btn-select list">
+          <li class="btn-item"><button type="button">Все</button></li>
+          <li class="btn-item"><button type="button">Веб-сайты</button></li>
+          <li class="btn-item"><button type="button">Приложения</button></li>
+          <li class="btn-item"><button type="button">Дизайн</button></li>
+          <li class="btn-item"><button type="button">Маркетинг</button></li>
         </ul>
       </section>
 
       <!--Список работ-->
-      <section class="work-samples">
-        <h2>Примеры работ</h2>
-        <ul class="list-samples">
-          <li class="item-samples">
-            <a class="link-sample" href="#">
-              <img src="./images/project-1.jpg" alt="Первый проект" width="393" height="294" />
-              <p class="title-sample">Технокряк</p>
-              <span class="name-sample">Веб-сайт</span>
+      <section class="sample-section">
+        <h2 class="sample-title">Примеры работ</h2>
+        <ul class="sample-list list">
+          <li class="sample-item">
+            <a class="sample-link" href="#">
+              <img class="sample-img" src="./images/project-1.jpg" alt="Первый проект" />
+              <p class="sample-item-title">Технокряк</p>
+              <span class="sample-item">Веб-сайт</span>
             </a>
           </li>
-          <li>
-            <a class="link-sample" href="#">
-              <img src="./images/project-2.jpg" alt="Второй проект" width="393" height="294" />
-              <p class="title-sample">Постер New Orlean vs Golden Star</p>
-              <span class="name-sample">Дизайн</span>
+          <li class="sample-item">
+            <a class="sample-link" href="#">
+              <img
+                class="sample-img"
+                src="./images/project-2.jpg"
+                alt="Второй проект"
+                width="393"
+                height="294"
+              />
+              <p class="sample-item-title">Постер New Orlean vs Golden Star</p>
+              <span class="sample-item">Дизайн</span>
             </a>
           </li>
-          <li>
-            <a class="link-sample" href="#">
-              <img src="./images/project-3.jpg" alt="Третий проект" width="393" height="294" />
-              <p class="title-sample">Ресторан Seafood</p>
-              <span class="name-sample">Приложение</span>
+          <li class="sample-item">
+            <a class="sample-link list" href="#">
+              <img
+                class="sample-img"
+                src="./images/project-3.jpg"
+                alt="Третий проект"
+                width="393"
+                height="294"
+              />
+              <p class="sample-item-title">Ресторан Seafood</p>
+              <span class="sample-item">Приложение</span>
             </a>
           </li>
-          <li>
-            <a class="link-sample" href="#">
-              <img src="./images/project-4.jpg" alt="Четвертый проект" width="393" height="294" />
-              <p class="title-sample">Проект Prime</p>
-              <span class="name-sample">Маркетинг</span>
+          <li class="sample-item">
+            <a class="sample-link" href="#">
+              <img
+                class="sample-img"
+                src="./images/project-4.jpg"
+                alt="Четвертый проект"
+                width="393"
+                height="294"
+              />
+              <p class="sample-item-title">Проект Prime</p>
+              <span class="sample-item">Маркетинг</span>
             </a>
           </li>
-          <li>
-            <a class="link-sample" href="#">
-              <img src="./images/project-5.jpg" alt="Пятый проект" width="393" height="294" />
-              <p class="title-sample">Проект Boxes</p>
-              <span class="name-sample">Приложение</span>
+          <li class="sample-item">
+            <a class="sample-link" href="#">
+              <img
+                class="sample-img"
+                src="./images/project-5.jpg"
+                alt="Пятый проект"
+                width="393"
+                height="294"
+              />
+              <p class="sample-item-title">Проект Boxes</p>
+              <span class="sample-item">Приложение</span>
             </a>
           </li>
-          <li>
-            <a class="link-sample" href="#">
-              <img src="./images/project-6.jpg" alt="Шестой  проект" width="393" height="294" />
-              <p class="title-sample">Inspiration has no Borders</p>
-              <span class="name-sample">Веб-сайт</span>
+          <li class="sample-item">
+            <a class="sample-link" href="#">
+              <img
+                class="sample-img"
+                src="./images/project-6.jpg"
+                alt="Шестой  проект"
+                width="393"
+                height="294"
+              />
+              <p class="sample-item-title">Inspiration has no Borders</p>
+              <span class="sample-item">Веб-сайт</span>
             </a>
           </li>
-          <li>
-            <a class="link-sample" href="#">
-              <img src="./images/project-7.jpg" alt="Седьмой проект" width="393" height="294" />
-              <p class="title-sample">Издание Limited Edition</p>
-              <span class="name-sample">Дизайн</span>
+          <li class="sample-item">
+            <a class="sample-link" href="#">
+              <img
+                class="sample-img"
+                src="./images/project-7.jpg"
+                alt="Седьмой проект"
+                width="393"
+                height="294"
+              />
+              <p class="sample-item-title">Издание Limited Edition</p>
+              <span class="sample-item">Дизайн</span>
             </a>
           </li>
-          <li>
-            <a class="link-sample" href="#">
-              <img src="./images/project-8.jpg" alt="Восьмой проект" width="393" height="294" />
-              <p class="title-sample">Проект LAB</p>
-              <span class="name-sample">Маркетинг</span>
+          <li class="sample-item">
+            <a class="sample-link" href="#">
+              <img
+                class="sample-img"
+                src="./images/project-8.jpg"
+                alt="Восьмой проект"
+                width="393"
+                height="294"
+              />
+              <p class="sample-item-title">Проект LAB</p>
+              <span class="sample-item">Маркетинг</span>
             </a>
           </li>
-          <li>
-            <a class="link-sample" href="#">
-              <img src="./images/project-9.jpg" alt="Девятый проект" width="393" height="294" />
-              <p class="title-sample">Growing Business</p>
-              <span class="name-sample">Приложение</span>
+          <li class="sample-item">
+            <a class="sample-link" href="#">
+              <img
+                class="sample-img"
+                src="./images/project-9.jpg"
+                alt="Девятый проект"
+                width="393"
+                height="294"
+              />
+              <p class="sample-item-title">Growing Business</p>
+              <span class="sample-item">Приложение</span>
             </a>
           </li>
         </ul>
@@ -130,18 +174,15 @@
 
     <!--Футер-->
     <footer>
-      <a class="logo" href="#">
-        <span class="logo-fist-name">Web</span>
-        <span class="logo-second-name">Studio</span>
-      </a>
+      <a class="logo" href="./index.html">Web<span>Studio</span></a>
       <address class="btm-addr">
         г. Киев, пр-т Леси Украинки, 26
-        <ul class="btm-addr-list">
-          <li class="btm-addr=item">
-            <a class="btm-link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <ul class="btm-addr-list list">
+          <li>
+            <a class="btm-mailto list" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="btm-addr=item">
-            <a class="btm-link-phone" href="tel:+380961111111"></a>+38 096 111 11 11
+          <li>
+            <a class="btm-link-phone" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>

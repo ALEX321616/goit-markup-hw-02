@@ -1,8 +1,148 @@
-body {
-  font-family: 'Roboto', 'Raleway', Arial, Verdana, sans-serif;
-  color: #212121;
+/*-------объявнение глоб.переменных--------------*/
+:root {
+  --color_brend_title: #212121; /*--цвет заголовков текста--*/
+  --color_brend_txt: #757575; /*--цвет текста--*/
+  --color_btn_link: #2196f3; /*--цвет акт. кнопок и ссылок---*/
+  --color_backgr: rgba(255, 255, 255, 1); /*--цвет основного фона--*/
+  --color_btn_txt: #ffffff; /*--цвет текста кнопок---*/
+  --color_logo_primary: #2196f3; /*-Первый цвет логотипа---*/
+  --color_logo_secondary: #000000; /*-Второй цвет логотипа---*/
 }
 
+/*---Установки "по умолчанию" для сайта----------------*/
+body {
+  font-family: 'Roboto', 'Raleway', 'Arial', 'Verdana', sans-serif;
+  color: var(--color_brend_title);
+  background-color: var(--color_backgr);
+  font-style: normal;
+  cursor: default;
+  letter-spacing: 0.03em;
+}
 a {
+  color: var(--color_brend_txt);
   text-decoration: none;
+}
+
+/*-----------логотип-------------*/
+.logo {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color_logo_primary);
+}
+.logo span {
+  color: var(--color_logo_secondary);
+}
+
+/*--- формат кнопок навигации-----*/
+button {
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color_brend_title);
+}
+
+/*--Отмена установок "по умолчанию" списков и ссылок-----*/
+.list {
+  list-style: none;
+}
+/*--для подсветки тек.страницы и кн.фильтра--*/
+.current {
+  color: var(--color_btn_link);
+}
+
+/*---- Главный заголовок ----*/
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 1.36;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #2f303a;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 100px;
+}
+
+/* --формат всех ссылок и кнопок при наведении-----*/
+a:hover,
+a:focus {
+  color: var(--color_btn_link);
+}
+
+button:hover,
+button:focus {
+  background-color: var(--color_btn_link);
+  border: oldlace;
+  color: var(--color_btn_txt);
+}
+
+.sample-img:hover,
+.sample-img:focus {
+  border: 1px solid #eeeeee;
+  width: 391px;
+  height: 292px;
+}
+
+/*-----фортат заголовков и подзаголовков----*/
+.advants-title,
+.portfolio-title,
+.sample-title {
+  display: none;
+}
+.direct-title,
+.card-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.advants-item-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+.sample-item-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color_brend_title);
+}
+
+.card-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/*-----фортат текстов ----*/
+.advants-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--color_brend_txt);
+}
+.sample-item-text {
+  font-size: 16px;
+  line-height: 1.88;
+  /*color: var(--color_brend_txt);*/
+}
+.card-text {
+  font-size: 16px;
+  line-height: 1.17;
+  /*text-align: center;*/
+  color: var(--color_brend_txt);
 }
