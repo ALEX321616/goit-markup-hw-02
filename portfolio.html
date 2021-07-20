@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -15,25 +17,25 @@
   <body>
     <header class="page-header">
       <nav class="nav-main">
-        <a class="logo" href="#">Web<span>Studio</span></a>
+        <a class="logo link" href="#">Web<span class="logo-part">Studio</span></a>
         <ul class="nav-list list">
           <li class="nav-item">
-            <a class="nav-link" href="./index.html">Студия</a>
+            <a class="nav-link link" href="./index.html">Студия</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link current" href="#">Портфолио</a>
+            <a class="nav-link link current" href="#">Портфолио</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Контакты</a>
+            <a class="nav-link link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
       <ul class="nav-contact list">
-        <li class="nav-item">
+        <li class="nav-contact-mailto">
           <a class="nav-link-mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+        <li class="nav-contact-phone">
+          <a class="nav-link-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
@@ -45,27 +47,34 @@
 
         <!--Фильтр по разделам-->
         <ul class="btn-select list">
-          <li class="btn-item"><button class="current" type="button">Все</button></li>
-          <li class="btn-item"><button type="button">Веб-сайты</button></li>
-          <li class="btn-item"><button type="button">Приложения</button></li>
-          <li class="btn-item"><button type="button">Дизайн</button></li>
-          <li class="btn-item"><button type="button">Маркетинг</button></li>
+          <li><button class="btn-item current" type="button">Все</button></li>
+          <li><button class="btn-item" type="button">Веб-сайты</button></li>
+          <li><button class="btn-item" type="button">Приложения</button></li>
+          <li><button class="btn-item" type="button">Дизайн</button></li>
+          <li><button class="btn-item" type="button">Маркетинг</button></li>
         </ul>
       </section>
+      <button></button>
 
       <!--Список работ-->
       <section class="sample-section">
         <h2 class="sample-title">Примеры работ</h2>
         <ul class="sample-list list">
           <li class="sample-item">
-            <a class="sample-link" href="#">
-              <img class="sample-img" src="./images/project-1.jpg" alt="Первый проект" />
+            <a class="sample-link link" href="#">
+              <img
+                class="sample-img"
+                src="./images/project-1.jpg"
+                alt="Первый проект"
+                width="393"
+                height="294"
+              />
               <p class="sample-item-title">Технокряк</p>
               <span class="sample-item">Веб-сайт</span>
             </a>
           </li>
           <li class="sample-item">
-            <a class="sample-link" href="#">
+            <a class="sample-link link" href="#">
               <img
                 class="sample-img"
                 src="./images/project-2.jpg"
@@ -78,7 +87,7 @@
             </a>
           </li>
           <li class="sample-item">
-            <a class="sample-link list" href="#">
+            <a class="sample-link link" href="#">
               <img
                 class="sample-img"
                 src="./images/project-3.jpg"
@@ -91,7 +100,7 @@
             </a>
           </li>
           <li class="sample-item">
-            <a class="sample-link" href="#">
+            <a class="sample-link link" href="#">
               <img
                 class="sample-img"
                 src="./images/project-4.jpg"
@@ -104,7 +113,7 @@
             </a>
           </li>
           <li class="sample-item">
-            <a class="sample-link" href="#">
+            <a class="sample-link link" href="#">
               <img
                 class="sample-img"
                 src="./images/project-5.jpg"
@@ -117,7 +126,7 @@
             </a>
           </li>
           <li class="sample-item">
-            <a class="sample-link" href="#">
+            <a class="sample-link link" href="#">
               <img
                 class="sample-img"
                 src="./images/project-6.jpg"
@@ -130,7 +139,7 @@
             </a>
           </li>
           <li class="sample-item">
-            <a class="sample-link" href="#">
+            <a class="sample-link link" href="#">
               <img
                 class="sample-img"
                 src="./images/project-7.jpg"
@@ -143,7 +152,7 @@
             </a>
           </li>
           <li class="sample-item">
-            <a class="sample-link" href="#">
+            <a class="sample-link link" href="#">
               <img
                 class="sample-img"
                 src="./images/project-8.jpg"
@@ -156,7 +165,7 @@
             </a>
           </li>
           <li class="sample-item">
-            <a class="sample-link" href="#">
+            <a class="sample-link link" href="#">
               <img
                 class="sample-img"
                 src="./images/project-9.jpg"
@@ -173,16 +182,16 @@
     </main>
 
     <!--Футер-->
-    <footer>
-      <a class="logo" href="./index.html">Web<span>Studio</span></a>
-      <address class="btm-addr">
+    <footer class="footer-section">
+      <a class="logo link" href="#">Web<span class="logo-part">Studio</span> </a>
+      <address class="addr">
         г. Киев, пр-т Леси Украинки, 26
-        <ul class="btm-addr-list list">
-          <li>
-            <a class="btm-mailto list" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <ul class="addr-list list">
+          <li class="addr-item">
+            <a class="addr-link-mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li>
-            <a class="btm-link-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="phone-item">
+            <a class="addr-link-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>

@@ -1,135 +1,165 @@
-/*-------объявнение глоб.переменных--------------*/
+/*--объявление глоб.переменных--*/
 :root {
-  --color_brend_title: #212121; /*--цвет заголовков текста--*/
-  --color_brend_txt: #757575; /*--цвет текста--*/
-  --color_btn_link: #2196f3; /*--цвет акт. кнопок и ссылок---*/
-  --color_backgr: rgba(255, 255, 255, 1); /*--цвет основного фона--*/
-  --color_btn_txt: #ffffff; /*--цвет текста кнопок---*/
-  --color_logo_primary: #2196f3; /*-Первый цвет логотипа---*/
-  --color_logo_secondary: #000000; /*-Второй цвет логотипа---*/
+  --clr-ttl: #212121; /*--осн.цвет заголовков--*/
+  --clr-txt: #757575; /*--осн.цвет текста--*/
+  --clr-backg-hero: #2f303a; /*--цвет фона героя и футера--*/
+  --clr-backg-item: #f5f4fa; /*--доп.цвет фона элементов--*/
+  --clr-btn-link: #ffffff; /*--цвет текста акт.кн.,ссылок..--*/
+  --clr-brend: #2196f3; /*-цвет логотипа,акт.кнопок и ссылок---*/
+  --clr-logo-part: #000000; /*-цвет логотипа,акт.кнопок и ссылок---*/
+  --clr-ft-link: rgba(255, 255, 255, 0.6); /*--цвет ссылок в футере--*/
 }
+/*--Установки "по умолчанию" для сайта--*/
 
-/*---Установки "по умолчанию" для сайта----------------*/
 body {
-  font-family: 'Roboto', 'Raleway', 'Arial', 'Verdana', sans-serif;
-  color: var(--color_brend_title);
-  background-color: var(--color_backgr);
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: var(--clr-txt);
+  background-color: var(--clr-btn-link);
   cursor: default;
-  letter-spacing: 0.03em;
-}
-a {
-  color: var(--color_brend_txt);
-  text-decoration: none;
 }
 
-/*-----------логотип-------------*/
-.logo {
-  font-family: 'Raleway';
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--color_logo_primary);
-}
-.logo span {
-  color: var(--color_logo_secondary);
-}
-
-/*--- формат кнопок навигации-----*/
-button {
-  height: 38px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color_brend_title);
-}
-button:first-child {
-  /* background-color: var(--color_btn_link);*/
-}
-button.current {
-  background-color: var(--color_btn_link);
-  color: var(--color_btn_txt);
-}
-
-/*--Отмена установок "по умолчанию" списков и ссылок-----*/
+/*--Установки элементов--*/
 .list {
   list-style: none;
 }
-/*--для подсветки тек.страницы и кн.фильтра--*/
-.current {
-  color: var(--color_btn_link);
+
+.link {
+  text-decoration: none;
 }
 
-/*---- Главный заголовок ----*/
+.nav-link.current {
+  color: var(--clr-brend);
+}
+
+/*--Логотип--*/
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: var(--clr-brend);
+  letter-spacing: 0.03em;
+}
+.logo-part {
+  color: var(--clr-logo-part);
+}
+
+.footer-section .logo-part {
+  color: var(--clr-btn-link);
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--clr-ttl);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--clr-brend);
+}
+
+.nav-link-mailto,
+.nav-link-phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--clr-txt);
+}
+.nav-link-mailto:hover,
+.nav-link-mailto:focus,
+.nav-link-phone:hover,
+.nav-link-phone:focus {
+  color: var(--clr-brend);
+}
+
+/*--main-section--*/
+.main-section {
+  background: var(--clr-backg-hero);
+  text-align: center;
+}
+
 .main-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
-  letter-spacing: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  background: #2f303a;
-  width: 1600px;
-  /*height: 600px;*/
-  left: 0px;
-  top: 100px;
+  color: var(--clr-btn-link);
 }
 
-/* --формат всех ссылок и кнопок при наведении-----*/
-a:hover,
-a:focus {
-  color: var(--color_btn_link);
+.main-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+}
+.main-btn:hover,
+.main-btn:focus {
+  color: var(--clr-btn-link);
+  background-color: var(--clr-brend);
 }
 
-button:hover,
-button:focus {
-  background-color: var(--color_btn_link);
-  border: oldlace;
-  color: var(--color_btn_txt);
-}
-
-.sample-img:hover,
-.sample-img:focus {
-  border: 1px solid #eeeeee;
-  width: 391px;
-  height: 292px;
-}
-.card-section {
-  background-color: #f5f4fa;
-}
-
-/*-----фортат заголовков и подзаголовков----*/
-.advants-title,
-.portfolio-title,
-.sample-title {
+/*--advants-section--*/
+.advants-title {
   display: none;
 }
-.direct-title,
-.card-title {
-  font-weight: bold;
+.advants-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--clr-ttl);
+}
+.advants-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--clr-txt);
+}
+
+/*--direct-section--*/
+.direct-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--clr-ttl);
 }
 
-.advants-item-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 0.88;
-  text-transform: uppercase;
+/*--card-section--*/
+.card-section {
+  background: var(--clr-backg-item);
+  text-align: center;
 }
-
-.sample-item-title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--color_brend_title);
+.card-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--clr-ttl);
+}
+.card-item {
+  width: 270px;
+  height: 368px;
+  background: var(--clr-btn-link);
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .card-item-title {
@@ -137,22 +167,82 @@ button:focus {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-
-/*-----фортат текстов ----*/
-.advants-text {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--color_brend_txt);
-}
-.sample-item-text {
-  font-size: 16px;
-  line-height: 1.88;
-  /*color: var(--color_brend_txt);*/
+  letter-spacing: 0.03em;
+  color: var(--clr-ttl);
 }
 .card-text {
   font-size: 16px;
-  line-height: 1.17;
+  line-height: 1.19;
   text-align: center;
-  color: var(--color_brend_txt);
+  letter-spacing: 0.03em;
+  color: var(--clr-txt);
+}
+/*--footer-section--*/
+.footer-section {
+  background: var(--clr-backg-hero);
+}
+
+.addr {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--clr-btn-link);
+}
+.addr-link-mailto,
+.addr-link-phone {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--clr-ft-link);
+}
+.addr-link-mailto:hover,
+.addr-link-mailto:focus,
+.addr-link-phone:hover,
+.addr-link-phone:focus {
+  color: var(--clr-brend);
+}
+
+/*------------PORTFOLIO---------*/
+
+.portfolio-title {
+  display: none;
+}
+.btn-item {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: var(--clr-backg-item);
+  color: var(--clr-ttl);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.btn-item:hover,
+.btn-item:focus {
+  color: var(--clr-btn-link);
+  background-color: var(--clr-brend);
+}
+
+.sample-title {
+  display: none;
+}
+
+.sample-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.sample-item {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--clr-txt);
 }
