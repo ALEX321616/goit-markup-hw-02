@@ -153,7 +153,6 @@ body {
 .card-item {
   width: 270px;
   height: 368px;
-  background: var(--clr-btn-link);
   text-align: center;
 }
 
