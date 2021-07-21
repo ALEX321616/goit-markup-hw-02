@@ -99,16 +99,18 @@ body {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
+  color: var(--clr-btn-link);
+  background-color: var(--clr-brend);
 }
+
 .main-btn:hover,
 .main-btn:focus {
   color: var(--clr-btn-link);
   background-color: var(--clr-brend);
 }
-
-/*--advants-section--*/
 .advants-title {
   display: none;
 }
@@ -214,12 +216,15 @@ body {
   background-color: var(--clr-backg-item);
   color: var(--clr-ttl);
   text-align: center;
-  border: none;
   cursor: pointer;
 }
 .btn-item:hover,
 .btn-item:focus {
   color: var(--clr-btn-link);
+  background-color: var(--clr-brend);
+}
+
+.btn-item.current {
   background-color: var(--clr-brend);
 }
 
